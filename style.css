@@ -192,3 +192,10 @@ img {
 
     }
 }
+
+@media (max-width:766px){
+    .container{
+        background:none;
+    }
+
+}

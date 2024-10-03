@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* width: 100vw; */
+    height: 100vh;
+    background-color: #776962;
+}
+
+.header {
+    text-align: center;
+    font-weight: 800;                         
+    color: white;                           
+    margin-top: 20px;                         
+    
+    /* Text Shadow */
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.4); 
+
+    /* Gradient Text */
+    background: linear-gradient(45deg, #f2fdff, #fffcfc); 
+    -webkit-background-clip: text;                       
+    -webkit-text-fill-color: transparent;               
+    
+    /* Letter Spacing */
+    letter-spacing: 1.5px;                              
+    
+    /* Line Height */
+    line-height: 1.2;                                 
+    
+    /* Text Transform */
+    text-transform: uppercase;                       
+    
+    /* Transition for Hover Effects */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.headertext:hover {
+    color: #00c6ff;                                
+    transform: scale(1.05);                            
+}
+
+
+h2 {        
+    background: linear-gradient(45deg, #9e5a3f, #ff7e5f); 
+    padding: 1% 5%;
+    border-radius: 10px;               
+    font-size: 1.6rem;                  
+    color: #ffffff;                       
+    text-align: center;                
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e0e0;
+    /* flex-wrap: wrap; */
+    width: 50vw;
+    height: 40vh;
+    margin: 3rem auto;
+    padding: 20px 0;
+    border-radius: 20px;
+}
+
+.sub-container {
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+#jokesDisplaySet {
+    padding: 10px;
+    background-color: #fff797;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+#jokesDisplayPun {
+    background-color: #85ff52;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;                         
+    border-radius: 25px;                         
+    font-size: 1.2rem;                           
+    font-weight: bold;                           
+    cursor: pointer;                           
+    
+    /* Gradient Background */
+    background: linear-gradient(45deg, #ff6a00, #ee0979); 
+    color: white;                              
+    border: none;                              
+    
+    /* Box Shadow */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease-in-out;           
+}
+
+button:hover {
+    /* Darken the background on hover */
+    background: linear-gradient(45deg, #ee0979, #ff6a00); 
+    transform: scale(1.05);                   
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+button:active {
+    transform: scale(0.98);                    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+}
+
+
+img {
+    width: 400px;
+}
+
+.image1 {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+.image2 {
+    transform: scaleX(-1);
+    position: absolute;
+    right: 50px;
+    top: 45px;
+}
+
+/* responsive */
+@media screen and (max-width:650px) {
+    .setup {
+        font-size: 15px;
+    }
+
+    .punchline {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .image1 {
+        width: 270px;
+        top: 80px;
+        left: 2px;
+    }
+    .image2{
+        width: 275px;
+        top: 130px;
+        right: 2px;
+
+    }
+}
+
+@media (min-width:590px) and (max-width: 767px) {
+    .image1 {
+        width: 180px;
+        top: 80px;
+        left: 2px;
+    }
+    .image2{
+        width: 180px;
+        top: 130px;
+        right: 2px;
+
+    }
+}
+
+@media (max-width:589px){
+    .image1 {
+        width: 100px;
+        top: 80px;
+        left: 2px;
+    }
+    .image2{
+        width: 100px;
+        top: 130px;
+        right: 2px;
+
+    }
+}

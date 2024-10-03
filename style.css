@@ -197,5 +197,8 @@ img {
     .container{
         background:none;
     }
+    .header{
+        font-size: 15px;
+    }
 
 }

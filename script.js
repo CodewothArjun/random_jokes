@@ -7,17 +7,16 @@ const displayError = document.querySelector("#Error");
 async function generateJokes() {
   try {
     const res = await fetch(url);
-    console.log(res);
     if (!res.ok) {
       throw new Error("Requested: " + res.error);
     }
     const data = await res.json();
     console.log(data);
 
-    display1.innerText = data.setup;
-    display2.innerText = data.delivery;
+    display1.innerText =  data.setup || data.category || "Unknown";// optional placeholder 'Unknown' if both setup and category  properties doesnt exist
+    display2.innerText = data.delivery || data.joke; // data contain .joke property in some response
   } catch (error) {
-    console.log("Having Somethig Wrong!!!");
+    console.error("Having Somethig Wrong!!!"); 
     displayError.innerText = "Something went wrong !!";
   }
 }
